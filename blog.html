@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloG:</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+        .table-table {
+            border: 0px solid rgba(255, 0, 0, 0.26);
+            font-family: 'Comfortaa', cursive;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80%;
+            margin: 5% 405px 70px 10%;
+            background: rgba(0, 0, 0, 0.438);
+            color: rgba(34, 33, 33, 0.938);
+            font-size: 20px;
+            color: rgb(247, 243, 7);
+        }
+        
+        body {
+            background-image: url(./img2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .heading {
+            border: 0px solid red;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.541);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table-table">
+        <thead>
+            <tr>
+                <th class="heading">CISC</th>
+                <th class="heading">RISC</th>
+            </tr>
+        </thead>
+        <br>
+        <tr class="first">
+            <td>Complex Instruction Set Computer</td>
+            <td>Reduced Instruction set Computer</td>
+
+        </tr>
+        <tr class="second">
+            <td>A large number of instructions are present in the architecture.</td>
+            <td>Very fewer instructions are present. The number of instructions are generally less than 100.</td>
+        </tr>
+        <tr class="first">
+            <td>Some instructions with long execution times. These include instructions that copy an entire block from one part of memory to another and others that copy multiple registers to and from memory.</td>
+            <td>No instruction with a long execution time due to very simple instruction set. Some early RISC machines did not even have an integer multiply instruction, requiring compilers to implement multiplication as a sequence of additions.</td>
+        </tr>
+        <tr class="second">
+            <td>Variable-length encodings of the instructions.&nbsp;<br><strong>Example:</strong> IA32 instruction size can range from 1 to 15 bytes.</td>
+            <td>Fixed-length encodings of the instructions are used.&nbsp;<br><strong>Example:</strong> In IA32, generally all instructions are encoded as 4 bytes.</td>
+        </tr>
+        <tr class="first">
+            <td>Multiple formats are supported for specifying operands. A memory operand specifier can have many different combinations of displacement, base and index registers.</td>
+            <td>Simple addressing formats are supported. Only base and displacement addressing is allowed.</td>
+        </tr>
+        <tr class="second">
+            <td>CISC supports array.</td>
+            <td>RISC does not supports array.</td>
+        </tr>
+        <tr class="first">
+            <td>Arithmetic and logical operations can be applied to both memory and register operands.</td>
+            <td>Arithmetic and logical operations only use register operands. Memory referencing is only allowed by load and store instructions, i.e. reading from memory into a register and writing from a register to memory respectively.</td>
+        </tr>
+
+        <tr class="second">
+            <td>Implementation programs are hidden from machine level programs. The ISA provides a clean abstraction between programs and how they get executed.</td>
+            <td>Implementation programs exposed to machine level programs. Few RISC machines do not allow specific instruction sequences.</td>
+        </tr>
+
+        <tr class="first">
+            <td>Condition codes are used.</td>
+            <td>No condition codes are used.</td>
+        </tr>
+        <tr class="second">
+            <td>The stack is being used for procedure arguments and return addresses.</td>
+            <td>Registers are being used for procedure arguments and return addresses. Memory references can be avoided by some procedures.</td>
+        </tr>
+        </tbody>
+    </table>
+    </table>
+</body>
+
+</html>
