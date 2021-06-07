@@ -22,7 +22,7 @@
         }
         
         body {
-            background-image: url(./img2.jpg);
+            background-image: url("./img2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -31,6 +31,19 @@
             border: 0px solid red;
             color: white;
             background-color: rgba(0, 0, 0, 0.541);
+        }
+        
+        @media screen and (max-width:1200px) {
+            body {
+                background-image: linear-gradient(rgb(209, 36, 36), #419b41);
+                background-size: unset;
+            }
+            .table-table {
+                padding: 0px;
+                margin: 0px;
+                height: fit-content;
+                width: fit-content;
+            }
         }
     </style>
 </head>
